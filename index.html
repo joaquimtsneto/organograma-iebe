@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -6,105 +5,161 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Organograma IEBE 2025–2026</title>
   <style>
-    body { background-color: #f3f4f6; font-family: sans-serif; padding: 2rem; text-align: center; }
-    h1 { font-size: 2rem; margin-bottom: 2rem; font-weight: bold; }
-    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem; }
-    .box { border-radius: 0.5rem; padding: 1rem; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 280px; }
-    .admin { background-color: #fef3c7; }
-    .admin-sub { background-color: #fef9c3; }
-    .pratico { background-color: #dbeafe; }
-    .pratico-sub { background-color: #e0f2fe; }
-    .titulo { font-weight: bold; margin-bottom: 0.5rem; }
-    .divider { margin: 4rem auto 2rem auto; width: 90%; height: 4px; background: linear-gradient(to right, #FCD34D, #60A5FA); border-radius: 2px; }
-    .identidade { font-size: 1rem; color: #1f2937; line-height: 1.6; max-width: 600px; margin: 3rem auto 0 auto; }
-    .identidade h2 { font-size: 1.3rem; margin-bottom: 0.4rem; font-weight: bold; }
-    .identidade p { margin-bottom: 2rem; }
+    body {
+      background-color: #f3f4f6;
+      font-family: sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .grupo {
+      margin-bottom: 3rem;
+    }
+    .caixa-grupo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #1f2937;
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .subgrid {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .subbox {
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      min-width: 200px;
+    }
+    .cargo {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #111827;
+    }
+    .nome {
+      margin-top: 0.25rem;
+      font-size: 0.95rem;
+      color: #1f2937;
+    }
+    .divider {
+      margin: 3rem auto;
+      width: 80%;
+      height: 4px;
+      background: linear-gradient(to right, #FCD34D, #60A5FA);
+      border-radius: 2px;
+    }
+    .identidade {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #1f2937;
+      line-height: 1.6;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .identidade h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      font-weight: bold;
+      color: #1f2937;
+      margin-top: 2rem;
+    }
+    .identidade p {
+      margin-bottom: 1.5rem;
+    }
+    .espaco { 
+      margin-bottom: 1.75rem; 
+    }
   </style>
 </head>
 <body>
   <h1>Organograma Geral – IEBE 2025–2026</h1>
 
-  <div class="grid">
-    <div class="box admin"><div class="titulo">ASSEMBLEIA GERAL</div>
-      <div class="admin-sub">Presidente: VICTOR</div>
-      <div class="admin-sub">1ª Secretária: ROSÂNIA</div>
-      <div class="admin-sub">2ª Secretária: DARIANE</div>
-    </div>
+  <h2>Ministérios Administrativos</h2>
 
-    <div class="box admin"><div class="titulo">DIREÇÃO GERAL</div>
-      <div class="admin-sub">Presidente: PR. JOAQUIM</div>
-      <div class="admin-sub">Vice: MIRON</div>
-      <div class="admin-sub">Tesoureiro: VICTOR</div>
-      <div class="admin-sub">Vogal: CARLOS</div>
+  <!-- Inserir manualmente os blocos administrativos gerados -->
+  <div class="grupo">
+    <div class="caixa-grupo" style="background-color:#FCD34D">ASSEMBLEIA GERAL</div>
+    <div class="subgrid">
+      <div class="subbox" style="background-color:#FEF9C3"><div class="cargo">Presidente</div><div class="nome">VICTOR</div></div>
+      <div class="subbox" style="background-color:#FEF9C3"><div class="cargo">1º Secretária</div><div class="nome">ROSÂNIA</div></div>
+      <div class="subbox" style="background-color:#FEF9C3"><div class="cargo">2º Secretária</div><div class="nome">DARIANE</div></div>
     </div>
-
-    <div class="box admin"><div class="titulo">CONSELHO FISCAL</div>
-      <div class="admin-sub">Presidente: JORGE</div>
-      <div class="admin-sub">Secretário: CRISTIANO</div>
-      <div class="admin-sub">Vogal 1: ALESSANDRO</div>
-      <div class="admin-sub">Vogal 2: DARIANE</div>
+  </div>
+  <div class="grupo">
+    <div class="caixa-grupo" style="background-color:#FEF9C3">DIREÇÃO GERAL</div>
+    <div class="subgrid">
+      <div class="subbox" style="background-color:#FEFCE8"><div class="cargo">Presidente</div><div class="nome">PR. JOAQUIM</div></div>
+      <div class="subbox" style="background-color:#FEFCE8"><div class="cargo">Vice-Presidente</div><div class="nome">MIRON</div></div>
+      <div class="subbox" style="background-color:#FEFCE8"><div class="cargo">Tesouraria</div><div class="nome">VICTOR</div></div>
+      <div class="subbox" style="background-color:#FEFCE8"><div class="cargo">Vogal</div><div class="nome">CARLOS</div></div>
     </div>
-
-    <div class="box admin"><div class="titulo">MINISTÉRIO PASTORAL</div>
-      <div class="admin-sub">Pastor: PR. JOAQUIM</div>
-      <div class="admin-sub">Dirigente 1: VICTOR</div>
-      <div class="admin-sub">Dirigente 2: ROSÂNIA</div>
+  </div>
+  <div class="grupo">
+    <div class="caixa-grupo" style="background-color:#D1FAE5">CONSELHO FISCAL</div>
+    <div class="subgrid">
+      <div class="subbox" style="background-color:#ECFDF5"><div class="cargo">Presidente</div><div class="nome">JORGE</div></div>
+      <div class="subbox" style="background-color:#ECFDF5"><div class="cargo">Secretário</div><div class="nome">CRISTIANO</div></div>
+      <div class="subbox" style="background-color:#ECFDF5"><div class="cargo">Vogal 1</div><div class="nome">ALESSANDRO</div></div>
+      <div class="subbox" style="background-color:#ECFDF5"><div class="cargo">Vogal 2</div><div class="nome">DARIANE</div></div>
     </div>
-
-    <div class="box admin"><div class="titulo">ESCOLA BÍBLICA</div>
-      <div class="admin-sub">Diretora: STELLA</div>
-      <div class="admin-sub">Vice: AMANDA, GISELLE</div>
-      <div class="admin-sub">Prof. Jovens/Adultos: MIRON, EMY, DARIANE</div>
-      <div class="admin-sub">Prof. Adolescentes: EMY, VALÉRIA</div>
-      <div class="admin-sub">Prof. Crianças: AMANDA, GISELLE, LEIRE, VALÉRIA</div>
+  </div>
+  <div class="grupo">
+    <div class="caixa-grupo" style="background-color:#DBEAFE">MINISTÉRIO PASTORAL</div>
+    <div class="subgrid">
+      <div class="subbox" style="background-color:#EFF6FF"><div class="cargo">Pastor</div><div class="nome">Pr. JOAQUIM</div></div>
+      <div class="subbox" style="background-color:#EFF6FF"><div class="cargo">Diáconos</div><div class="nome"></div></div>
+      <div class="subbox" style="background-color:#EFF6FF"><div class="cargo">Dirigente 1</div><div class="nome">VICTOR</div></div>
+      <div class="subbox" style="background-color:#EFF6FF"><div class="cargo">Dirigente 2</div><div class="nome">ROSÂNIA</div></div>
+    </div>
+  </div>
+  <div class="grupo">
+    <div class="caixa-grupo" style="background-color:#E5E7EB">ESCOLA BÍBLICA</div>
+    <div class="subgrid">
+      <div class="subbox" style="background-color:#F9FAFB"><div class="cargo">Diretora</div><div class="nome">STELLA</div></div>
+      <div class="subbox" style="background-color:#F9FAFB"><div class="cargo">Vice-Diretores</div><div class="nome">AMANDA, GISELLE</div></div>
+      <div class="subbox" style="background-color:#F9FAFB"><div class="cargo">Professores (Jovens e Adultos)</div><div class="nome">MIRON, EMY & DARIANE</div></div>
+      <div class="subbox" style="background-color:#F9FAFB"><div class="cargo">Professores (Adolescentes)</div><div class="nome">EMY & VALÉRIA</div></div>
+      <div class="subbox" style="background-color:#F9FAFB"><div class="cargo">Professores (Crianças)</div><div class="nome">AMANDA, GISELLE, LEIRE & VALÉRIA</div></div>
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <div class="grid">
-    <div class="box pratico"><div class="titulo">EVANGELISMO E MISSÕES</div>
-      <div class="pratico-sub">Evangelismo de Rua: STELLA</div>
-      <div class="pratico-sub">Distribuição de Folhetos: GISELLE</div>
-      <div class="pratico-sub">Evangelismo Infantil: LEIRE</div>
-      <div class="pratico-sub">Apoio a Missionários: PR. JOAQUIM</div>
-    </div>
+  <h2>Ministérios Práticos</h2>
 
-    <div class="box pratico"><div class="titulo">LOUVOR E CELEBRAÇÃO</div>
-      <div class="pratico-sub">Líder do Coral: AMANDA</div>
-      <div class="pratico-sub">Vogais do Coral: AMANDA, EMY</div>
-      <div class="pratico-sub">Responsável por Cultos: JOAQUIM</div>
-    </div>
-
-    <div class="box pratico"><div class="titulo">INFRAESTRUTURA</div>
-      <div class="pratico-sub">Manutenção: AFONSO</div>
-      <div class="pratico-sub">Limpeza: MIRON</div>
-      <div class="pratico-sub">Segurança e Portaria: ALESSANDRO</div>
-    </div>
-
-    <div class="box pratico"><div class="titulo">COMUNICAÇÃO</div>
-      <div class="pratico-sub">Redes Sociais: AMANDA</div>
-      <div class="pratico-sub">Aniversariantes: AMANDA</div>
-      <div class="pratico-sub">Live Stream: ALLAN</div>
-    </div>
-
-    <div class="box pratico"><div class="titulo">MINISTÉRIO FEMININO</div>
-      <div class="pratico-sub">Coordenação: GISELLE</div>
-      <div class="pratico-sub">Atividades Sociais: ROSÂNIA</div>
+  <!-- Blocos dos ministérios práticos -->
+  <div class="grupo">
+    <div class="caixa-grupo" style="background-color:#93C5FD">EVANGELISMO E MISSÕES</div>
+    <div class="subgrid">
+      <div class="subbox" style="background-color:#DBEAFE"><div class="cargo">Evangelismo de Rua</div><div class="nome">STELLA</div></div>
+      <div class="subbox" style="background-color:#DBEAFE"><div class="cargo">Distribuição de Folhetos</div><div class="nome">GISELLE</div></div>
+      <div class="subbox" style="background-color:#DBEAFE"><div class="cargo">Evangelismo Infantil</div><div class="nome">LEIRE</div></div>
+      <div class="subbox" style="background-color:#DBEAFE"><div class="cargo">Apoio a Missionários</div><div class="nome">PR. JOAQUIM</div></div>
     </div>
   </div>
-
-  <div class="divider"></div>
 
   <div class="identidade">
     <h2>Nossa Divisa</h2>
-    <p><em>“Eis-me aqui, envia-me a mim”</em><br><strong>Isaías 6:8</strong></p>
+    <p><em>"Eis-me aqui, envia-me a mim"</em><br><strong>Isaías 6:8</strong></p>
+    <div class="espaco"></div>
+
     <h2>Nossa Visão</h2>
-    <p>Ser uma igreja comprometida com o chamado de Cristo, testemunhando a verdade do Evangelho,<br>
-    sendo luz e sal neste mundo, e equipando discípulos para representar fielmente o Senhor<br>
-    como embaixadores do Reino.</p>
+    <p>Ser uma igreja comprometida com o chamado de Cristo, testemunhando a verdade do Evangelho, sendo luz e sal neste mundo, e equipando discípulos para representar fielmente o Senhor como embaixadores do Reino.</p>
+    <div class="espaco"></div>
+
     <h2>Nosso Lema</h2>
     <p>Resplandecendo a Sua luz e proclamando a Sua verdade.</p>
   </div>
+
 </body>
 </html>
